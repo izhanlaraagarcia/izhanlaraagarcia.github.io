@@ -43,7 +43,6 @@ Sigue estos pasos para configurar y ejecutar el proyecto en tu máquina local:
 
 
 ## Estructura del Proyecto
-    ```lua
     .
     ├── .history
     ├── vite-project
