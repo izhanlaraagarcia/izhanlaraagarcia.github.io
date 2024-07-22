@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Portfolio Personal
 
 ## Descripción
