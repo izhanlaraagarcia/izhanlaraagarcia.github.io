@@ -1,37 +1,52 @@
-/* Estilos generales del menú */
+/* src/Componentes-Generales/styles/menu.css */
+
 nav {
   top: 0;
   right: 0;
-  margin: 0%;
-  padding: 10px;
+  margin: 0;
+  padding: 0;
   position: fixed;
   width: 100%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) no-repeat;
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 0px 25px #222;
+  z-index: 10;
+
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  align-items: center;
 }
 
 nav li {
-  margin-left: 20px;
-  margin-right: 70px;
+  margin-left: 10px;
 }
 
 nav a {
-  float: left;
-  display: block;
+  display: flex;
+  align-items: center;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 18px;
-  color: inherit; /* Cambiado a 'inherit' para heredar el color del padre */
+  color: inherit;
   position: relative;
   overflow: hidden;
+  transition: color 0.3s;
 }
 
-/* Define los estilos para los modos claro y oscuro */
+nav a:hover {
+  color: #00aaff;
+}
+
+.fa-icon {
+  margin-left: 8px;
+}
+
 .light-mode {
   color: black;
 }
@@ -42,4 +57,8 @@ nav a {
 
 body {
   transition: background-color 0.5s, color 0.5s;
+}
+
+#tema {
+  margin-left: 10px;
 }

@@ -6,8 +6,6 @@ import About from "./pages/About/about.jsx";
 import Contact from "./pages/Contact/contact.jsx";
 import { ThemeProvider } from "./Constants/themaContext.jsx";
 
-
-
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 

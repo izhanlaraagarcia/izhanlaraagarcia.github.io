@@ -4,6 +4,7 @@ import "./styles/menu.scss";
 import TemaComponent from "./thema";
 import { useTheme } from "../Constants/themaContext";
 
+
 // import { LANGUAGES } from "../Constants/lenguaje";
 
 const Menu = () => {
@@ -28,6 +29,7 @@ const Menu = () => {
         </ul>
       </nav>
     </header>
+    
   );
 };
 

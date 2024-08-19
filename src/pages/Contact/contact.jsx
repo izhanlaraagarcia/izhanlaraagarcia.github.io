@@ -7,7 +7,7 @@ class Contact extends React.Component {
       <div>
         <Menu />
         <h1>Contacto</h1>
-        <p>test</p>
+      
       </div>
     );
   }
