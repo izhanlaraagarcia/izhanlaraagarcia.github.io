@@ -1,16 +1,18 @@
 import React from "react";
-import Menu from "../../Componentes-Generales/menu";
 import "./styles/about.scss";
 
 // import Background from "../../Componentes-Generales/background";
-// import BasicTimeline from '../../Componentes-Generales/timeline.jsx';
+import Logo from "../../Componentes-Generales/logo";
+
 class About extends React.Component {
   render() {
     return (
-      <div>
-        <Menu />
-        <center>
-          <h2>Sobre mi</h2>
+      <><Logo /><div>
+        <br />
+        <br />
+        
+        <div id="bigcontainer">
+          <h1>Sobre mi</h1>
           <section id="CV_text">
             <hr />
             <p>
@@ -39,88 +41,87 @@ class About extends React.Component {
               visitar mi portafolio. Si tienes alguna pregunta o simplemente
               quieres decir hola, no dudes en contactarme.{" "}
             </p>
-
             <hr />
           </section>
-        </center>
 
-        {/* Seccion educacion */}
-        <div id="experiencia">
-          {/* <BasicTimeline/> */}
-          <h2>Educacion</h2>
-          <section className="education">
-            <div className="item">
-              <h3>Sistemas Microinformáticos y Redes</h3>
-              <p className="location">Santa Monica, Palma de Mallorca, España</p>
-              <p className="date">06/2017 - 06/2019</p>
-            </div>
-            <div className="item">
-              <h3>Desarrollo de Aplicaciones Web</h3>
-              <p className="location">
-                iFP: Centro de Formación Profesional, Barcelona, España
-              </p>
-              <p className="date">02/2023 - Presente</p>
-            </div>
+          {/* Seccion educacion */}
+          <div id="experiencia">
+            <h2>Educacion</h2>
+            <section className="education">
+              <div className="item">
+                <h3>Sistemas Microinformáticos y Redes</h3>
+                <p className="location">
+                  Santa Monica, Palma de Mallorca, España
+                </p>
+                <p className="date">06/2017 - 06/2019</p>
+              </div>
+              <div className="item">
+                <h3>Desarrollo de Aplicaciones Web</h3>
+                <p className="location">
+                  iFP: Centro de Formación Profesional, Barcelona, España
+                </p>
+                <p className="date">02/2023 - Presente</p>
+              </div>
+            </section>
+            <section className="experience">
+              <h2>Experiencia Laboral</h2>
+              <div className="item">
+                <h3>Help Desk IT</h3>
+                <p className="location">W2M, Palma de Mallorca</p>
+                <p className="date">03/2022 - 03/2023</p>
+                <p>
+                  Instalación de software y hardware, mantenimiento de equipos,
+                  resolución de problemas, uso de herramientas de Help Desk como
+                  Jira, scripting, Intune, AD, Endpoint, Licencias, PowerShell.
+                </p>
+              </div>
+              <div className="item">
+                <h3>Help Desk - Applications Support</h3>
+                <p className="location">W2M, Palma de Mallorca</p>
+                <p className="date">03/2023 - Presente</p>
+                <p>
+                  Soporte a usuarios sobre herramientas como Juniper, Dome,
+                  Jira, Adyen, MIKE, Intranet, Confluence.
+                </p>
+              </div>
+            </section>
+          </div>
+          {/* Skills */}
+          <section className="skills">
+            <h2>Habilidades</h2>
+            <ul>
+              <li>Resolución de problemas</li>
+              <li>Comunicación</li>
+              <li>Trabajo bajo presión</li>
+              <li>Aprendizaje continuo</li>
+              <li>Trabajo en equipo</li>
+              <li>Conocimiento técnico</li>
+            </ul>
           </section>
-          <section className="experience">
-            <h2>Experiencia Laboral</h2>
-            <div className="item">
-              <h3>Help Desk IT</h3>
-              <p className="location">W2M, Palma de Mallorca</p>
-              <p className="date">03/2022 - 03/2023</p>
-              <p>
-                Instalación de software y hardware, mantenimiento de equipos,
-                resolución de problemas, uso de herramientas de Help Desk como
-                Jira, scripting, Intune, AD, Endpoint, Licencias, PowerShell.
-              </p>
-            </div>
-            <div className="item">
-              <h3>Help Desk - Applications Support</h3>
-              <p className="location">W2M, Palma de Mallorca</p>
-              <p className="date">03/2023 - Presente</p>
-              <p>
-                Soporte a usuarios sobre herramientas como Juniper, Dome, Jira,
-                Adyen, MIKE, Intranet, Confluence.
-              </p>
-            </div>
+          <section className="certifications">
+            <h2>Certificaciones</h2>
+            <ul>
+              <li>
+                Fundamentos Profesionales del Desarrollo de Software, Microsoft
+                y LinkedIn (02/2023 - Presente)
+              </li>
+              <li>
+                Fundamentos Profesionales del Análisis de Datos, Microsoft y
+                LinkedIn (02/2023 - Presente)
+              </li>
+              <li>Curso Profesional de JAVA (05/2023 - Presente)</li>
+            </ul>
+          </section>
+          <section id="languages">
+            <h2>Idiomas</h2>
+            <ul>
+              <li>Español: Nativo o Bilingüe</li>
+              <li>Inglés: Competencia Limitada</li>
+              <li>Catalán: Competencia Profesional Completa</li>
+            </ul>
           </section>
         </div>
-        {/* Skills */}
-        <section className="skills">
-          <h2>Habilidades</h2>
-          <ul>
-            <li>Resolución de problemas</li>
-            <li>Comunicación</li>
-            <li>Trabajo bajo presión</li>
-            <li>Aprendizaje continuo</li>
-            <li>Trabajo en equipo</li>
-            <li>Conocimiento técnico</li>
-          </ul>
-        </section>
-        <section className="certifications">
-          <h2>Certificaciones</h2>
-          <ul>
-            <li>
-              Fundamentos Profesionales del Desarrollo de Software, Microsoft y
-              LinkedIn (02/2023 - Presente)
-            </li>
-            <li>
-              Fundamentos Profesionales del Análisis de Datos, Microsoft y
-              LinkedIn (02/2023 - Presente)
-            </li>
-            <li>Curso Profesional de JAVA (05/2023 - Presente)</li>
-          </ul>
-        </section>
-        <section className="languages">
-          <h2>Idiomas</h2>
-          <ul>
-            <li>Español: Nativo o Bilingüe</li>
-            <li>Inglés: Competencia Limitada</li>
-            <li>Catalán: Competencia Profesional Completa</li>
-          </ul>
-        </section>
-        {/* <Background/> */}
-      </div>
+      </div></>
     );
   }
 }

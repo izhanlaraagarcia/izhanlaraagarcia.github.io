@@ -24,9 +24,11 @@
     "@types/react-router-dom": "^5.3.3",
     "framer-motion": "^11.3.19",
     "i18next": "^23.12.2",
+    "node-sass": "^9.0.0",
     "react": "^18.3.1",
+    "react-chrono": "^2.6.1",
     "react-dom": "^18.3.1",
-    "react-horizontal-timeline": "^1.5.3",
+    "react-horizontal-timeline": "^1.4.0",
     "react-i18next": "^15.0.0",
     "react-vertical-timeline-component": "^3.6.0",
     "tailwindcss": "^3.4.7"

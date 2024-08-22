@@ -1,11 +1,12 @@
 import React from "react";
-import Menu from "../../Componentes-Generales/menu";
+import Logo  from "../../Componentes-Generales/logo";
+
 
 class Contact extends React.Component {
   render() {
     return (
       <div>
-        <Menu />
+        <Logo/>
         <h1>Contacto</h1>
       
       </div>

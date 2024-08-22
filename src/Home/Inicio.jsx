@@ -1,20 +1,14 @@
 import React from "react";
-import "./Styles/estilos.scss";
-import Background from "../Componentes-Generales/background";
-
-import SocialMedia from '../Componentes-Generales/social';
+import Logo from "../Componentes-Generales/logo";
+import Fondo from "../Componentes-Generales/fondo";
 
 
 const Inicio = () => {
   return (
-    <div className="portfolio">
-      <header>
-        <h1>Izhan Lara Garcia</h1>
-      </header>
-      <div className="social-media-container">
-        <SocialMedia/>
-      </div>
-      <Background/>
+    <div>
+          <Logo/>
+          <h1>Hola mundo!</h1>
+          <Fondo/>
     </div>
   );
 };

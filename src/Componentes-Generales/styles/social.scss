@@ -19,18 +19,15 @@
     align-items: center;
     width: 40px; /* Ajusta según sea necesario */
     height: 40px; /* Ajusta según sea necesario */
-    justify-content: center;
-    cursor: pointer;
-
-    
+    justify-content: center;    
 
     &:hover {
-      color: #fffefe;
+      color: skyblue;
     }
   }
 
   .fa-icon, .fa {
-    font-size: 30px;
+    font-size: 70px;
     margin-right: 10px;
   }
 }
