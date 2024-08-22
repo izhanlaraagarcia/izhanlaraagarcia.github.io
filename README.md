@@ -30,7 +30,7 @@ Sigue estos pasos para configurar y ejecutar el proyecto en tu máquina local:
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/nombre-del-repositorio.git
+   git clone https://github.com/izhanlaraagarcia/ILG.github.io
 2. Navega al directorio del proyecto
     ```bash
     cd nombre-del-repositorio
