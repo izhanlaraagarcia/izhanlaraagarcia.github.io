@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./styles/menu.scss";
-import TemaComponent from "./thema";
+// import TemaComponent from "./thema";
 import { useTheme } from "../Constants/themaContext";
-
 
 // import { LANGUAGES } from "../Constants/lenguaje";
 
@@ -11,7 +10,7 @@ const Menu = () => {
   const { dark } = useTheme();
   return (
     <header>
-      <nav className={`menu ${dark ? 'dark-mode' : 'light-mode'}`}>
+      <nav className={`menu ${dark ? "dark-mode" : "light-mode"}`}>
         <ul>
           <li>
             <Link to="/">Inicio</Link>
@@ -23,13 +22,10 @@ const Menu = () => {
           <li>
             <Link to="/contacto">Contacto</Link>
           </li>
-          <li>
-            <TemaComponent />
-          </li>
+          <li>{/* <TemaComponent /> */}</li>
         </ul>
       </nav>
     </header>
-    
   );
 };
 

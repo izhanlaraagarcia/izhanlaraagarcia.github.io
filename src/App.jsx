@@ -1,31 +1,18 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Menu from "./Componentes-Generales/menu.jsx";
-import Inicio from "./Home/Inicio.jsx";
-import About from "./pages/About/about.jsx";
-import Contact from "./pages/Contact/contact.jsx";
-import { ThemeProvider } from "./Constants/themaContext.jsx";
+// App.js
+import React, { useState } from "react";
+import HeaderComponent from "./components/HeaderComponent";
 
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { fas } from "@fortawesome/free-solid-svg-icons";
+function App() {
+  const [language, setLanguage] = useState("en");
 
-library.add(fas);
-
-class App extends React.Component {
-  render() {
-    return (
-      <ThemeProvider>
-        <Router>
-          <Menu />
-          <Routes>
-            <Route path="/" element={<Inicio />} />
-            <Route path="/sobre-mi" element={<About />} />
-            <Route path="/contacto" element={<Contact />} />
-          </Routes>
-        </Router>
-      </ThemeProvider>
-    );
-  }
+  const toggleLanguage = () => {
+    setLanguage((prevLang) => (prevLang === "en" ? "es" : "en"));
+  };
+  return (
+    <div className="App">
+      <HeaderComponent onLanguageToggle={toggleLanguage} />
+    </div>
+  );
 }
 
 export default App;

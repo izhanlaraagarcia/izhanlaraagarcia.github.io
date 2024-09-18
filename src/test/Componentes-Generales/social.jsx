@@ -26,7 +26,8 @@ const SocialMedia = () => {
         </li>
         <li>
           <a
-            href="https://www.linkedin.com/in/izhan-lara-garcía"target="_blank"
+            href="https://www.linkedin.com/in/izhan-lara-garcía"
+            target="_blank"
             rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
