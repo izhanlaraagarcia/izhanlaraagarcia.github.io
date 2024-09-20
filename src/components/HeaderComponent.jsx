@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Link as RouterLink } from 'react-router-dom'; // Para navegar entre páginas
-import { Link } from 'react-scroll'; // Para hacer scroll dentro de la misma página
+import { Link as RouterLink } from "react-router-dom"; // Para navegar entre páginas
+import { Link } from "react-scroll"; // Para hacer scroll dentro de la misma página
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import USFlag from "../assets/us-flag.png";
 import ESFlag from "../assets/es-flag.png";
 import AboutComponent from "./AboutComponent";
 import SkillsComponent from "./SkillsComponent";
 import FooterComponent from "./FooterComponent";
-
+import WhatsAppButton from "./subComponentes/floating-whatsapp";
 
 const HeaderComponent = () => {
   const [language, setLanguage] = useState("en");
@@ -43,9 +43,9 @@ const HeaderComponent = () => {
       },
     },
   };
-const handleMenuToggle = () => {
-  setMenuOpen((prevMenuOpen) => !prevMenuOpen);
-};
+  const handleMenuToggle = () => {
+    setMenuOpen((prevMenuOpen) => !prevMenuOpen);
+  };
   const toggleLanguage = () => {
     setLanguage((prevLang) => (prevLang === "en" ? "es" : "en"));
   };
@@ -53,6 +53,57 @@ const handleMenuToggle = () => {
   return (
     <>
       <header className="header" id="header">
+        {/* Círculos animados en el fondo */}
+        <motion.div
+          className="background-circles"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2 }}
+        >
+          <motion.div
+            className="circle"
+            animate={{
+              x: [0, 200, 0],
+              y: [0, -100, 100, -50, 0],
+              scale: [1, 1.5, 1],
+              opacity: [1, 0.7, 1],
+            }}
+            transition={{
+              duration: 10,
+              ease: "easeInOut",
+              repeat: Infinity,
+            }}
+          />
+          <motion.div
+            className="circle"
+            animate={{
+              x: [0, -250, 150],
+              y: [0, 150, -80, 100, 0],
+              scale: [1, 1.2, 1],
+              opacity: [1, 0.5, 1],
+            }}
+            transition={{
+              duration: 12,
+              ease: "easeInOut",
+              repeat: Infinity,
+            }}
+          />
+          <motion.div
+            className="circle"
+            animate={{
+              x: [0, -150, 100],
+              y: [0, 100, -150, 50, 0],
+              scale: [1, 1.3, 1],
+              opacity: [1, 0.4, 1],
+            }}
+            transition={{
+              duration: 8,
+              ease: "easeInOut",
+              repeat: Infinity,
+            }}
+          />
+        </motion.div>
+        {/* Nav menu */}
         <motion.nav
           className="nav"
           initial={{ opacity: 0, y: -50 }}
@@ -96,7 +147,7 @@ const handleMenuToggle = () => {
             </li>
           </ul>
         </motion.nav>
-
+        {/* Contenido del encabezado */}
         <motion.div
           className="header-content"
           initial={{ opacity: 0 }}
@@ -130,8 +181,8 @@ const handleMenuToggle = () => {
           >
             {/* Botón de descarga del CV */}
             <motion.a
-              href="./IzhanLaraGarcia.pdf" // Asegúrate de tener la ruta correcta a tu archivo CV
-              download="IzhanLaraGarcia.pdf" // El nombre del archivo que se descargará
+              href="./IzhanLaraGarcia.pdf"
+              download="IzhanLaraGarcia.pdf" 
               className="btn btn-glow"
               whileHover={{
                 scale: 1.1,
@@ -145,7 +196,8 @@ const handleMenuToggle = () => {
             {/* Botón que lleva al portafolio */}
 
             <motion.a
-              href="/subComponentes/Portfolio" // Cambia esto por el enlace correcto de tu portafolio
+              as={RouterLink}
+              to="./subComponentes/Portfolio"
               className="btn btn-glow"
               whileHover={{
                 scale: 1.1,
@@ -155,7 +207,6 @@ const handleMenuToggle = () => {
             >
               {translations[language].portfolio}
             </motion.a>
-
           </motion.div>
 
           {/* Redes sociales */}
@@ -169,7 +220,7 @@ const handleMenuToggle = () => {
             <motion.a
               href="https://linkedin.com/in/izhan-lara-garcía"
               target="_blank"
-              rel="noopener noreferrer" // Asegura que los enlaces se abran de forma segura en una nueva pestaña
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.3 }}
             >
               <FaLinkedin />
@@ -246,10 +297,11 @@ const handleMenuToggle = () => {
           </ul>
         </motion.nav>
       </header>
-      
+
       <AboutComponent language={language} />
       <SkillsComponent language={language} />
       <FooterComponent language={language} />
+      <WhatsAppButton language={language} />
     </>
   );
 };

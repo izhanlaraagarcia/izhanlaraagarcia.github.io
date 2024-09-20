@@ -2,6 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
+import FooterComponent from "./FooterComponent";
+
+import logo from "../assets/Izhan_Happy.JPEG";
+
 // Variantes de animación para un efecto impresionante
 const containerVariants = {
   hidden: { opacity: 0, y: 100 },
@@ -36,13 +40,13 @@ const AboutComponent = ({ language }) => {
       title: "About Me",
       description:
         "I am a passionate 21-year-old software developer with a solid programming foundation and a great desire to learn. I'm ready to start my career as a junior developer and eager to apply my skills in a team environment.",
-      button: "Let's Connect",
+      button: "Contact me",
     },
     es: {
       title: "Sobre Mí",
       description:
         "Soy un apasionado desarrollador de software de 21 años con una sólida base en programación y un gran deseo de aprender. Estoy listo para comenzar mi carrera como desarrollador junior y aplicar mis habilidades en un entorno de equipo.",
-      button: "Conectemos",
+      button: "Contactame",
     },
   };
 
@@ -61,7 +65,7 @@ const AboutComponent = ({ language }) => {
           whileHover={{ scale: 1.05, rotate: 3 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <img src="../assets/IMG_0972.JPEG" className="profile-image" />
+          <img src={logo} className="profile-image" />
         </motion.div>
 
         <motion.div className="about-text" variants={textVariants}>
@@ -69,6 +73,7 @@ const AboutComponent = ({ language }) => {
           <p className="about-description">{t.description}</p>
 
           <motion.button
+            as={FooterComponent}
             className="contact-btn"
             variants={buttonVariants}
             whileHover="hover"

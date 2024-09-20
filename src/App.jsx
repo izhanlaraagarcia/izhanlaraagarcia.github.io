@@ -1,7 +1,10 @@
-// App.js
 import React, { useState } from "react";
 import HeaderComponent from "./components/HeaderComponent";
+import WhatsAppButton from "./components/subComponentes/floating-whatsapp";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
+import Portfolio from "./components/subComponentes/Portfolio";
+import UpBtn from "./components/subComponentes/up-btn";
 function App() {
   const [language, setLanguage] = useState("en");
 
@@ -9,9 +12,13 @@ function App() {
     setLanguage((prevLang) => (prevLang === "en" ? "es" : "en"));
   };
   return (
-    <div className="App">
-      <HeaderComponent onLanguageToggle={toggleLanguage} />
-    </div>
+    <Router>
+    <Routes>
+      <Route path="/" element={<HeaderComponent />} />
+      <Route path="/portfolio" element={<Portfolio />} />
+    </Routes>
+    <UpBtn/>
+  </Router>
   );
 }
 
