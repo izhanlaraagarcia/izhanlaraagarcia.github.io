@@ -1,0 +1,20 @@
+import React from 'react';
+import './Styles/estilos.css'
+import {BrowsertRouter as Rotuer, Route, link} from "react-router-dom"
+
+
+// Importamos las demas paginas que tenemos creadas
+
+
+import { Contact } from "./Contact/contact.jsx";
+
+class Home extends React.Component {
+  render() {
+    return (
+      <h1>jola</h1>
+
+    );
+  }
+}
+
+export default Home;
