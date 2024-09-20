@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beneficios ISB</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F2FAF9;
+            color: #333;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background-color: #fff;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 600;
+            color: #E63946;
+        }
+
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .nav a:hover {
+            color: #E63946;
+        }
+
+        #color {
+            background-color: #fff;
+            padding: 20px 0;
+        }
+
+        .benefits-header {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .benefits-header h2 {
+            color: #333;
+            font-size: 32px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .benefits-header h2 span:first-child {
+            color: #E63946;
+        }
+
+        .benefits-header .underline {
+            width: 185px;
+            height: 3px;
+            background-color: #E63946;
+            margin-top: 5px;
+        }
+
+        .benefits-description {
+            max-width: 1200px;
+            margin: 20px auto;
+            font-size: 18px;
+            color: #666;
+            padding: 10px 20px;
+        }
+
+        .benefits-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .benefit-card {
+            background-color: #f9f9f9;
+            color: #333;
+            border-radius: 8px;
+            overflow: hidden;
+            width: calc(33.333% - 20px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .benefit-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 3px solid #E63946;
+        }
+
+        .benefit-card .benefit-title {
+            font-size: 20px;
+            padding: 15px 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .benefit-card .benefit-description {
+            font-size: 16px;
+            padding: 10px 20px;
+            line-height: 1.6;
+        }
+
+        .view-all-benefits {
+            text-align: right;
+            padding: 10px 20px 0;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .view-all-benefits a {
+            color: #333;
+            text-decoration: none;
+            position: relative;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        .view-all-benefits a:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #E63946;
+            left: 0;
+            bottom: 0;
+        }
+
+        .view-all-benefits a:hover {
+            color: #E63946;
+        }
+
+        /* Preguntas frecuentes */
+        .faq-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-header {
+            text-align: left;
+            padding: 0 0 20px;
+            border-bottom: 2px solid #E63946;
+            margin-bottom: 20px;
+        }
+
+        .faq-header h2 {
+            color: #333;
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        .faq-header h2 span {
+            color: #E63946;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-question {
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+            cursor: pointer;
+            margin: 0;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .faq-answer {
+            font-size: 16px;
+            padding: 10px 0;
+            color: #666;
+            display: none;
+            line-height: 1.6;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #E63946;
+            color: #fff;
+            padding: 40px 20px;
+        }
+
+        footer .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        footer .footer-container .contact-info {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        footer .footer-container .contact-info h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        footer .footer-container .contact-info p {
+            margin: 5px 0;
+        }
+
+        footer .footer-container .contact-info a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer .footer-container .social-links {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 20px;
+        }
+
+        footer .footer-container .social-links img {
+            width: 30px;
+            height: 30px;
+            filter: brightness(0) invert(1);
+        }
+
+        @media (max-width: 768px) {
+            .benefit-card {
+                width: calc(50% - 20px);
+            }
+
+            .view-all-benefits {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .benefit-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">ISB Instalaciones</div>
+            <nav class="nav">
+                <a href="#servicios">Servicios</a>
+                <a href="#beneficios">Beneficios</a>
+                <a href="#faq">Preguntas</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Servicios -->
+    <section id="servicios">
+        <div class="benefits-header">
+            <h2><span>ISB</span> Servicios</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="benefits-container">
+            <!-- Example Service Card -->
+            <div class="benefit-card">
+                <img src="detector.jpg" alt="Detección de Incendios">
+                <div class="benefit-title">Detección de Incendios</div>
+                <div class="benefit-description">Texto de ejemplo.</div>
+            </div>
+            <div class="benefit-card">
+                <img src="instalaciones.jpg" alt="Instalaciones Eléctricas">
+                <div class="benefit-title">Instalaciones Eléctricas</div>
+                <div class="benefit-description">Texto de ejemplo.</div>
+            </div>
+            <div class="benefit-card">
+                <img src="extintores.jpg" alt="Extintores">
+                <div class="benefit-title">Extintores</div>
+                <div class="benefit-description">Texto de ejemplo.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section id="beneficios">
+        <div class="benefits-header">
+            <h2><span>ISB</span> Beneficios</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="benefits-container">
+            <div class="benefit-card">
+                <img src="trayectoria.jpg" alt="Trayectoria y competencia técnica">
+                <div class="benefit-title">Trayectoria y competencia técnica</div>
+                <div class="benefit-description">Amplia experiencia y conocimientos en la industria.</div>
+            </div>
+            <div class="benefit-card">
+                <img src="sistema.jpg" alt="Sistema administrativo eficiente">
+                <div class="benefit-title">Sistema administrativo eficiente</div>
+                <div class="benefit-description">Procesos optimizados para un servicio ágil y efectivo.</div>
+            </div>
+            <div class="benefit-card">
+                <img src="progreso.jpg" alt="Progreso constante">
+                <div class="benefit-title">Progreso constante</div>
+                <div class="benefit-description">Evolución continua en busca de la excelencia.</div>
+            </div>
+            <div class="benefit-card">
+                <img src="satisfaccion.jpg" alt="Satisfacción garantizada">
+                <div class="benefit-title">Satisfacción garantizada</div>
+                <div class="benefit-description">Compromiso total con la satisfacción del cliente.</div>
+            </div>
+            <div class="benefit-card">
+                <img src="profesionalidad.jpg" alt="Compromiso y profesionalidad">
+                <div class="benefit-title">Compromiso y profesionalidad</div>
+                <div class="benefit-description">Altos estándares de calidad en cada proyecto.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preguntas Frecuentes -->
+    <section id="faq" class="faq-container">
+        <div class="faq-header">
+            <h2>Preguntas <span>Frecuentes</span></h2>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">¿ISB Instalaciones brinda servicios en todas las islas Baleares?</h3>
+            <div class="faq-answer">Sí, nuestros servicios están disponibles en todas las islas Baleares.</div>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">¿Cómo puedo contactarlos?</h3>
+            <div class="faq-answer">Nos puedes contactar por teléfono o correo electrónico.</div>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">¿Realizan mantenimiento de instalaciones?</h3>
+            <div class="faq-answer">Sí, ofrecemos servicios de mantenimiento para todas nuestras instalaciones.</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="footer-container">
+            <div class="contact-info">
+                <h3>ISB Instalaciones</h3>
+                <p>Carrer d'Henri Dunant, 19, Nord</p>
+                <p>07004 Palma (Islas Baleares)</p>
+                <p>Email: <a href="mailto:isbinstalaciones@gmail.com">isbinstalaciones@gmail.com</a></p>
+                <p>Teléfono: <a href="tel:+34942202220">+34 94 220 22 20</a></p>
+                <a href="#" class="contact-btn">Contactarnos</a>
+            </div>
+            <div class="social-links">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

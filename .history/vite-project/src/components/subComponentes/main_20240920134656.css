@@ -1,0 +1,99 @@
+/* Portfolio.css */
+.portfolio {
+    padding: 100px 20px;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+  }
+  
+  .portfolio-title {
+    font-size: 48px;
+    margin-bottom: 50px;
+    color: #ff6bcb;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .portfolio-item {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(255, 107, 203, 0.4);
+  }
+  
+  .portfolio-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .portfolio-info {
+    padding: 10px;
+  }
+  
+  .portfolio-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ff6bcb;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .portfolio-link:hover {
+    color: #fa3c9b;
+  }
+  
+
+
+/* BTN TOP */
+  .up-btn {
+    display: none; /* Oculto inicialmente */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #ff6bcb; /* Color rosado vibrante */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    box-shadow: 0 8px 15px rgba(255, 107, 203, 0.3); /* Sombra suave */
+    cursor: pointer;
+    z-index: 999;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .scroll-to-top {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .scroll-to-top:hover {
+    background-color: grey;
+  }
+
+  .up-btn.visible{
+    opacity: 1;
+  }
+  

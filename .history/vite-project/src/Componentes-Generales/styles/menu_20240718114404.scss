@@ -1,0 +1,69 @@
+nav {
+    top: 0;
+    right: 0;
+    margin: 0%;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    /* background-color: white;
+    opacity: 1;
+    border: 1px solid white */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+.menu[data-animation="diagonal"] .border-left {
+    transform-origin: top left;
+}
+.menu[data-animation="diagonal"] .border-right,
+.menu[data-animation="diagonal"] .border-bottom {
+  transform-origin: bottom right;
+}
+.menu[data-animation="diagonal"] a:hover [class^=border]{
+  transition-delay: 0s;
+}
+
+:root {
+    ...
+    --transition-duration: 0.2s;
+    --transition-delay: 0.2s;
+  }
+
+.menu .border {
+    transition: transform var(--transition-duration) ease-in-out;
+  }
+  .menu a:hover .border-top,
+  .menu a:hover .border-bottom {
+    transform: scaleX(1);
+  }
+  .menu a:hover .border-left,
+  .menu a:hover .border-right {
+    transform: scaleY(1);
+  }
+  .menu a:hover .border-right {
+    transition-delay: var(--transition-delay);
+  }
+  .menu a:hover .border-bottom {
+    transition-delay: calc(var(--transition-delay) * 2);
+  }
+  .menu a:hover .border-left {
+    transition-delay: calc(var(--transition-delay) * 3);
+  }

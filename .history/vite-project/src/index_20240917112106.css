@@ -1,0 +1,52 @@
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  color: white;
+  background-color: #1a1a1a;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #111;
+}
+
+h1, h2, h3 {
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+.skills, .experience {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills ul, .experience ul {
+  list-style: none;
+  padding: 0;
+}
+
+.bar {
+  display: inline-block;
+  background-color: #333;
+  width: 200px;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.progress {
+  display: block;
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: 5px;
+}
+
+/* Otros estilos adicionales aquí */

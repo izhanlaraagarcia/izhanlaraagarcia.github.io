@@ -1,0 +1,36 @@
+.social-media-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  z-index: 10; /* Asegúrate de que el contenedor esté por encima de otros elementos */
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+    display: inline-flex; /* Asegura que el área del enlace cubra el icono */
+    align-items: center;
+    width: 40px; /* Ajusta según sea necesario */
+    height: 40px; /* Ajusta según sea necesario */
+    justify-content: center;
+    // cursor: pointer;
+
+    
+
+    &:hover {
+      color: skyblue;
+    }
+  }
+
+  .fa-icon, .fa {
+    font-size: 70px;
+    margin-right: 10px;
+  }
+}

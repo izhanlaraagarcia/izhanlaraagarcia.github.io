@@ -1,0 +1,140 @@
+/* Estilos para el menú de navegación */
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  text-align: center;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav ul li {
+  margin: 0 15px;
+}
+
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+  color: #f09;
+}
+
+section {
+  padding: 100px 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  background-image: url('path/to/your-image.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.header-content h1 {
+  font-size: 60px;
+  margin: 0;
+}
+
+.header-content p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.buttons .btn {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #f09;
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.buttons .btn:hover {
+  background-color: #fff;
+  color: #f09;
+}
+
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #111;
+  color: white;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+}
+
+.about-content img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+.about-text h2 {
+  font-size: 36px;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.skills {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.skill-bars {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill {
+  margin-bottom: 20px;
+  width: 80%;
+  max-width: 600px;
+}
+
+.skill .bar {
+  height: 20px;
+  background-color: #4caf50;
+  border-radius: 10px;
+  margin-top: 10px;
+  transition: width 0.5s ease-in-out;
+}

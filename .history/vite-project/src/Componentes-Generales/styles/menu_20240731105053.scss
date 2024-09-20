@@ -1,0 +1,69 @@
+/* src/Componentes-Generales/styles/menu.css */
+nav {
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000; /* Asegúrate de que el menú esté por encima de otros elementos */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.left-menu {
+  margin-left: 20px;
+}
+
+.right-menu {
+  margin-right: 30px;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: inherit;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00aaff; /* Color de acento */
+}
+
+.fa-icon {
+  margin-left: 8px;
+}
+
+/* Define los estilos para los modos claro y oscuro */
+.light-mode {
+  color: black;
+}
+
+.dark-mode {
+  color: white;
+}
+
+body {
+  transition: background-color 0.5s, color 0.5s;
+}

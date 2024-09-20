@@ -1,0 +1,51 @@
+{
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@mui/lab": "^5.0.0-alpha.173",
+    "@mui/material": "^5.16.7",
+    "@nextui-org/navbar": "^2.0.36",
+    "@nextui-org/react": "^2.4.6",
+    "@nextui-org/system": "^2.2.5",
+    "@nextui-org/theme": "^2.2.9",
+    "@syncfusion/ej2-react-layouts": "^26.2.9",
+    "@types/react-router-dom": "^5.3.3",
+    "framer-motion": "^11.5.4",
+    "i18next": "^23.12.2",
+    "node-sass": "^9.0.0",
+    "react": "^18.3.1",
+    "react-chrono": "^2.6.1",
+    "react-dom": "^18.3.1",
+    "react-horizontal-timeline": "^1.4.0",
+    "react-i18next": "^15.0.0",
+    "react-icons": "^5.3.0",
+    "react-scroll": "^1.9.0",
+    "react-tsparticles": "^2.0.0",
+    "tsparticles": "^2.0.0",
+    "tailwindcss": "^3.4.7"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.2",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "less": "^4.2.0",
+    "sass": "^1.77.8",
+    "vite": "^5.3.1"
+  }
+}

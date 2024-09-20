@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Fondo completo del banner con efecto parallax */
+        .banner {
+            position: relative;
+            height: 100vh;
+            background: url('https://isbinstalaciones.com/wp-content/uploads/2023/05/agentes_gaseosos.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* Efecto Parallax para el fondo */
+        .banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Mayor sombreado para mejorar contraste */
+            z-index: 1;
+        }
+
+        /* Estilos del header */
+        .header {
+            position: relative;
+            z-index: 2;
+            background-color: rgba(242, 242, 242, 0.8); /* Fondo semitransparente */
+            backdrop-filter: blur(10px); /* Efecto de desenfoque */
+            padding: 40px 60px;
+            text-align: center;
+            border-radius: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeSlideIn 2s ease-out forwards;
+        }
+
+        /* Efecto de fade-in con desplazamiento para el header */
+        @keyframes fadeSlideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Efecto de brillo en el texto del título */
+        .header h1 {
+            font-size: 42px;
+            color: #ff0000; /* Color rojo para que destaque sobre el fondo oscuro */
+            margin-bottom: 10px;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeSlideIn 1.5s ease-out forwards 0.5s;
+        }
+
+        /* Estilos del subtítulo */
+        .header p {
+            font-size: 18px;
+            color: #ffffff; /* Blanco para mayor contraste */
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeSlideIn 1.5s ease-out forwards 1s;
+        }
+
+        /* Estilo de botones de llamada a la acción con resplandor */
+        .cta-btn {
+            background-color: #ff0000;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 30px;
+            display: inline-block;
+            margin-top: 20px;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeSlideIn 1.5s ease-out forwards 1.5s, glow 1.5s infinite alternate;
+        }
+
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
+            }
+            100% {
+                box-shadow: 0 0 20px #ff3333, 0 0 30px #ff3333, 0 0 40px #ff3333;
+            }
+        }
+
+        /* Partículas flotantes de fondo */
+        .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .particle {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 50%;
+            animation: float 10s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) translateX(0);
+                opacity: 1;
+            }
+            50% {
+                transform: translateY(-100px) translateX(50px);
+                opacity: 0.5;
+            }
+            100% {
+                transform: translateY(0) translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Más partículas flotantes */
+        .particle:nth-child(1) { width: 10px; height: 10px; top: 10%; left: 20%; animation-duration: 8s; }
+        .particle:nth-child(2) { width: 8px; height: 8px; top: 30%; left: 50%; animation-duration: 6s; }
+        .particle:nth-child(3) { width: 12px; height: 12px; top: 60%; left: 70%; animation-duration: 14s; }
+        .particle:nth-child(4) { width: 6px; height: 6px; top: 80%; left: 40%; animation-duration: 9s; }
+        .particle:nth-child(5) { width: 15px; height: 15px; top: 50%; left: 90%; animation-duration: 12s; }
+        .particle:nth-child(6) { width: 7px; height: 7px; top: 20%; left: 60%; animation-duration: 10s; }
+        .particle:nth-child(7) { width: 10px; height: 10px; top: 75%; left: 30%; animation-duration: 11s; }
+        .particle:nth-child(8) { width: 9px; height: 9px; top: 35%; left: 80%; animation-duration: 8s; }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 32px;
+            }
+
+            .header p {
+                font-size: 16px;
+            }
+
+            .cta-btn {
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Banner de fondo con partículas flotantes y efecto parallax -->
+    <div class="banner" id="top-Banner">
+        <!-- Efecto de partículas flotantes -->
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+
+        <!-- Contenedor del encabezado con efecto de desvanecimiento, brillo y desplazamiento -->
+        <header class="header">
+            <h1>ISB Instalaciones</h1> <!-- Añadimos el nombre de la empresa en el título -->
+            <h2>Protegemos lo que más te importa: tu negocio, tu seguridad, tu futuro.</h2>
+            <p>Soluciones profesionales en sistemas contra incendios, instalaciones eléctricas y seguridad.</p>
+            <a href="#sobre-nosotros" class="cta-btn">Descubre más</a>
+        </header>
+    </div>
+</body>
+</html>

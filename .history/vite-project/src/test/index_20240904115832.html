@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISB Instalaciones - Footer</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        footer {
+            background-color: #E63946;
+            color: #fff;
+            padding: 40px 20px;
+            margin-top: 50px;
+            position: relative;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-column {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+
+        .footer-column h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .footer-column p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #f1f1f1;
+            margin-bottom: 10px;
+        }
+
+        .footer-column a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .footer-column a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-column .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            transition: transform 0.3s;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #B02731;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .footer-bottom a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-bottom a:hover {
+            text-decoration: underline;
+        }
+
+        .map-container {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-column {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>ISB Instalaciones</h3>
+                <p>Carrer d'Henri Dunant, 19, Nord<br>07004 Palma (Islas Baleares)</p>
+                <p>Email: isbinstalacionescontacto@gmail.com</p>
+                <p>Teléfono: +34 642 52 20 20</p>
+                <a href="mailto:isbinstalacionescontacto@gmail.com">Contáctanos</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Ubicación</h3>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3123.3450190839644!2d2.650224776536033!3d39.584167679471215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129792590c3f4b03%3A0xf2d9e8c22c0c4aef!2sCarrer%20d'Henri%20Dunant%2C%2019%2C%2007004%20Palma%2C%20Illes%20Balears%2C%20Spain!5e0!3m2!1sen!2ses!4v1680302294152!5m2!1sen!2ses"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Nuestras Marcas</h3>
+                <div class="social-icons">
+                    <img src="logo1.png" alt="Linkind">
+                    <img src="logo2.png" alt="Infojobs">
+                    <img src="logo3.png" alt="Facebook">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 ISB Instalaciones. Todos los derechos reservados. <a href="#">Política de Privacidad</a> | <a href="#">Términos y Condiciones</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
