@@ -141,4 +141,3 @@ TESTAPP/
     end
     
     print_structure(project_structure)
-    
