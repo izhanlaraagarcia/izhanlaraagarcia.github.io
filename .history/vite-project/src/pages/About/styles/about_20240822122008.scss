@@ -1,0 +1,48 @@
+/* src/pages/About/about.scss */
+
+.about-container {
+    display: flex;
+    align-items: flex-start; /* Alinea el contenido en la parte superior */
+    padding: 20px;
+  }
+  
+  .sidebar {
+    width: 250px; /* Ajusta el ancho según necesites */
+    position: fixed; /* Mantiene la sidebar fija en su lugar */
+    top: 100px; /* Ajusta esto para que la sidebar esté correctamente posicionada respecto al menú */
+    left: 20px; /* Espaciado respecto al borde izquierdo de la pantalla */
+    z-index: 10;
+  }
+  
+  .profile-pic {
+    text-align: center;
+  }
+  
+  .initials-box {
+    width: 100px;
+    height: 100px;
+    background-color: #f2f2f2; /* Color de fondo del cuadro con las iniciales */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .about-content {
+    margin-left: 290px; /* Deja espacio para la sidebar */
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff; /* Fondo blanco para el contenido */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  }
+  

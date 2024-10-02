@@ -1,0 +1,32 @@
+/* src/Home/styles/helloWorld.scss */
+
+.hello-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    background-color: #282c34;
+  }
+  
+  .hello-text {
+    font-size: 4rem;
+    color: white;
+    opacity: 0; /* Inicialmente invisible */
+    transform: translateY(-20px); /* Desplazado hacia arriba */
+    animation: fadeInSlideDown 2s forwards; /* Animación personalizada */
+  }
+  
+  @keyframes fadeInSlideDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

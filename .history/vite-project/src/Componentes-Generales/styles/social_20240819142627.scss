@@ -1,0 +1,47 @@
+.social-media-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  z-index: 10; /* Asegúrate de que el contenedor esté por encima de otros elementos */
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+
+  li {
+    margin-bottom: 20px;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+    display: inline-flex; /* Asegura que el área del enlace cubra el icono */
+    align-items: center;
+    width: 40px; /* Ajusta según sea necesario */
+    height: 40px; /* Ajusta según sea necesario */
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover {
+      color: #ccc;
+    }
+  }
+
+  .fa-icon, .fa {
+    font-size: 30px;
+    margin-right: 10px;
+  }
+}
+
+.social-media-container {
+  position: fixed;
+  bottom: 20px; /* Ajusta según sea necesario */
+  left: 20px; /* Ajusta según sea necesario */
+  padding: 10px;
+  z-index: 10;
+  background: transparent; /* Asegúrate de que no haya un fondo que interfiera */
+}

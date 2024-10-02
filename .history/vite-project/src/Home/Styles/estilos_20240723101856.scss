@@ -1,0 +1,31 @@
+h1 {
+    right: 0;
+    margin: 0%;
+    margin-top: 20%;
+    margin-bottom: 15%;
+    text-align: center;
+
+}
+
+
+.containerRedesSociales{
+    margin-right: 70hv;
+    margin: 5px;
+    padding: 10px;
+}
+
+.containerRedesSociales img{
+  width: 30px;
+}
+
+.light-mode {
+    color: black;
+  }
+  
+  .dark-mode {
+    color: white;
+  }
+  
+  body {
+    transition: background-color 0.5s, color 0.5s;
+  }

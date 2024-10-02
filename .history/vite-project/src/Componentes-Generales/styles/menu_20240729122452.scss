@@ -1,0 +1,51 @@
+/* Estilos generales del menú */
+nav {
+  top: 0;
+  right: 0;
+  margin: 0%;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin-left: 20px;
+  margin-right: 70px;
+}
+
+nav a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: inherit;
+  /* Cambiado a 'inherit' para heredar el color del padre */
+  position: relative;
+  overflow: hidden;
+}
+
+nav section{
+  width: 2px;
+}
+
+/* Define los estilos para los modos claro y oscuro */
+.light-mode {
+  color: black;
+}
+
+.dark-mode {
+  color: white;
+}
+
+body {
+  transition: background-color 0.5s, color 0.5s;
+}
+

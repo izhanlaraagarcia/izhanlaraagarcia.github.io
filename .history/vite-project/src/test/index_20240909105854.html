@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios IBS Instalaciones</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        .header {
+            background-color: #f2f2f2;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 42px;
+            color: #000;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        /* Estilo de botones de llamada a la acción */
+        .cta-btn {
+            background-color: #ff0000;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 30px;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: #cc0000;
+        }
+
+        /* Sección de servicios */
+        .services-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 50px 20px;
+            background-color: #ffffff;
+        }
+
+        .service-card {
+            background-color: #f9f9f9;
+            width: 30%;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        .service-card h3 {
+            font-size: 24px;
+            color: #ff0000;
+            margin-top: 20px;
+        }
+
+        .service-card p {
+            padding: 0 20px;
+            font-size: 16px;
+            color: #666;
+        }
+
+        /* Nueva sección de testimonios */
+        .testimonials-section {
+            background-color: #f2f2f2;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .testimonials-section h2 {
+            font-size: 36px;
+            color: #000;
+            margin-bottom: 40px;
+        }
+
+        .testimonial {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .testimonial .author {
+            margin-top: 20px;
+            font-weight: 600;
+            color: #000;
+        }
+
+        .testimonial img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-top: 10px;
+        }
+
+        /* Pie de página */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .footer p {
+            font-size: 14px;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado con mensaje de bienvenida -->
+    <header class="header">
+        <h1>Bienvenido a IBS Instalaciones</h1>
+        <p>Soluciones profesionales en sistemas contra incendios, instalaciones eléctricas y seguridad.</p>
+        <a href="#services" class="cta-btn">Descubre nuestros servicios</a>
+    </header>
+
+    <!-- Sección de servicios -->
+    <section id="services" class="services-container">
+        <article class="service-card">
+            <img src="https://isbinstalaciones.com/wp-content/uploads/detector-humo.jpg" alt="Detección de Incendios">
+            <h3>Detección de Incendios</h3>
+            <p>Sistemas avanzados para prevenir incendios y asegurar la protección de tu espacio.</p>
+        </article>
+        <article class="service-card">
+            <img src="https://via.placeholder.com/300x200?text=Instalaciones+Electricas" alt="Instalaciones Eléctricas">
+            <h3>Instalaciones Eléctricas</h3>
+            <p>Soluciones eléctricas seguras para todo tipo de edificaciones e instalaciones.</p>
+        </article>
+        <article class="service-card">
+            <img src="https://isbinstalaciones.com/wp-content/uploads/Designer-1.jpeg" alt="Extintores">
+            <h3>Extintores</h3>
+            <p>Equipos de extinción de incendios para cualquier tipo de necesidad y espacio.</p>
+        </article>
+    </section>
+
+    <!-- Nueva sección de testimonios -->
+    <section class="testimonials-section">
+        <h2>Testimonios de nuestros clientes</h2>
+        <div class="testimonial">
+            <p>"IBS Instalaciones nos brindó un servicio de alta calidad. Estamos muy satisfechos con su profesionalismo y rapidez."</p>
+            <div class="author">- Juan Pérez</div>
+            <img src="https://via.placeholder.com/80" alt="Cliente feliz">
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p>&copy; 2024 IBS Instalaciones. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

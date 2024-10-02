@@ -1,0 +1,24 @@
+nav{
+    top: 0;
+    right: 0;
+    text-align: left;
+    margin: 0%;
+    background-color: red;
+    position: fixed;
+    width: 100%;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a:hover{
+    background-color: aliceblue;
+}

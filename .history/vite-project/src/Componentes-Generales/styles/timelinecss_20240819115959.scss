@@ -1,0 +1,26 @@
+.social-media-container{
+    
+  }
+  
+  .social-media-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .social-media-container li {
+    margin-bottom: 10px;
+  }
+  
+  .social-media-container a {
+    color: #333;
+    transition: color 0.2s ease;
+  }
+  
+  .social-media-container a:hover {
+    color: #666;
+  }
+  
+  .social-media-container i {
+    font-size: 24px;
+  }

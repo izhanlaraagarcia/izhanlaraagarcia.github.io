@@ -1,0 +1,12 @@
+/* Define los estilos para los modos claro y oscuro */
+.light-mode {
+  color: black;
+}
+
+.dark-mode {
+  color: white;
+}
+
+body {
+  transition: background-color 0.5s, color 0.5s;
+}

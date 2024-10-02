@@ -1,0 +1,38 @@
+.header {
+    background-image: url('path/to/your-image.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .header-content h1 {
+    font-size: 60px;
+    margin: 0;
+  }
+  
+  .header-content p {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .buttons .btn {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #f09;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .buttons .btn:hover {
+    background-color: #fff;
+    color: #f09;
+  }
+  

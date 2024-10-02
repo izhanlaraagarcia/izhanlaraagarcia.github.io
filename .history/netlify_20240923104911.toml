@@ -1,0 +1,8 @@
+[build]
+command = "npm install --legacy-peer-deps && npm run build"
+
+[build.environment]
+NODE_VERSION = "18.20.4"
+
+[build]
+ignore = "rm -rf node_modules"

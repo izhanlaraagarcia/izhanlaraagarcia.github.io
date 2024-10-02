@@ -1,0 +1,119 @@
+/* src/pages/About/about.scss */
+
+/* Colores */
+$background-color: #f9f9f9;
+$text-color: #333;
+$accent-color: #0066cc;
+$border-color: #ddd;
+
+/* Tipografía */
+$font-family: 'Montserrat', sans-serif;
+$font-size: 16px;
+
+body {
+  font-family: $font-family;
+  font-size: $font-size;
+  color: $text-color;
+  background-color: $background-color;
+  line-height: 1.6;
+}
+
+/* Contenedor Principal */
+#bigcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: $background-color;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Títulos */
+h1, h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  color: $text-color;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+/* Secciones */
+.section {
+  width: 100%;
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.section p, .section ul {
+  margin-bottom: 16px;
+  color: $text-color;
+}
+
+/* Listas */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Links */
+a {
+  color: $accent-color;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* Sección de Enlaces */
+.links ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.links li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.links a {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #bigcontainer {
+    padding: 10px;
+  }
+
+  .section {
+    padding: 15px;
+  }
+
+  .links ul {
+    flex-direction: column;
+  }
+
+  .links li {
+    margin: 10px 0;
+  }
+}

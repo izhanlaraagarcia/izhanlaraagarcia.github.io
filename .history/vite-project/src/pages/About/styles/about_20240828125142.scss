@@ -1,0 +1,100 @@
+// about.scss
+// Configuración de la página
+#bigcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 800px; /* ancho del contenedor */
+    margin: 40px auto 40px 375px; /* centrado horizontalmente con margen derecho */
+    filter: blur(30000);
+  }
+  // Agregamos un padding-left para que el contenido esté más a la derecha
+  #bigcontainer {
+    margin-left: 40%;
+  }
+  
+  // Título de la página
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  // Sección de texto
+  #CV_text {
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  // Sección de educación
+  #experiencia {
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .automation{
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  // Sección de habilidades
+  .skills {
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  // Sección de certificaciones
+  .certifications {
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  // Sección de idiomas
+  #languages {
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  // Estilos para dispositivos móviles
+  @media (max-width: 768px) {
+    #bigcontainer {
+      padding: 10px;
+    }
+}
+
+
+// Agregamos una clase común a todas las secciones
+.section {
+    max-width: 700px; /* ancho máximo de cada sección */
+    margin: 20px auto; /* margen superior e inferior y centrado horizontalmente */
+    padding: 20px; /* espacio entre el contenido y el borde de la sección */
+  }
+  
+  // Aplicamos la clase a cada sección
+  #CV_text, #experiencia, .skills, .certifications, #languages {
+    @extend .section;
+  }
+
+  .section {
+    width: 90%; /* ancho de cada sección */
+    margin: 20px auto; /* margen superior e inferior y centrado horizontalmente */
+    padding: 20px; /* espacio entre el contenido y el borde de la sección */
+  }

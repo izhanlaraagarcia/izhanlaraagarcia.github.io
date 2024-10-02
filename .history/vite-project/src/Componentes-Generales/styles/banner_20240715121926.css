@@ -1,0 +1,35 @@
+/* @import "compass/css3"; */
+
+.container-fluid.fondo{
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+}
+.fondo > .row {
+  background: #fffdf7;;
+  height: 10vh;
+  width: 100%;
+  animation: fade 5s infinite;
+  animation-direction: alternate;
+  margin: 0;
+}
+.fondo > .row-2 {
+  animation-delay:0.5s;
+  margin: 0;
+}
+.fondo > .row-3 {
+  animation-delay:1s;
+  margin: 0;
+}
+.fondo > .row-4 {
+  animation-delay:1.5s;
+  margin: 0;
+}
+.fondo > .row-5 {
+  animation-delay:2s;
+  margin: 0;
+}
+.fondo > .row-6 {
+  animation-delay:2.5s;
+  margin: 0;
+}
